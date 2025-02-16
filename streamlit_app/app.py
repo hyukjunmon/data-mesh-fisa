@@ -10,6 +10,8 @@ catalog = requests.get("http://catalog_service:7000/api/catalog").json()
 for service in catalog["services"]:
     st.subheader(service["name"])
     st.write(service["description"])
+    st.write("다음은 예시입니다.")
+    st.write(service["api_url"])
     st.json(service["fields"])
 
 # 주문 데이터 조회
