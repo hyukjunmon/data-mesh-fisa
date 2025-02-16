@@ -1,0 +1,5 @@
+catalog_service/
+domain_customer/
+domain_order/
+streamlit_app/
+docker-compose.yml
