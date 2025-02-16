@@ -1,0 +1,25 @@
+{
+    "services": [
+        {
+            "name": "Order Service",
+            "description": "주문 데이터를 제공하는 API",
+            "api_url": "http://domain_a:5000/api/orders",
+            "fields": [
+                {"name": "order_id", "type": "INTEGER", "description": "주문 ID"},
+                {"name": "customer_id", "type": "INTEGER", "description": "고객 ID"},
+                {"name": "product_name", "type": "TEXT", "description": "상품 이름"},
+                {"name": "quantity", "type": "INTEGER", "description": "주문 수량"}
+            ]
+        },
+        {
+            "name": "Customer Service",
+            "description": "고객 데이터를 제공하는 API",
+            "api_url": "http://domain_b:6000/api/customers",
+            "fields": [
+                {"name": "customer_id", "type": "INTEGER", "description": "고객 ID"},
+                {"name": "name", "type": "TEXT", "description": "고객 이름"},
+                {"name": "country", "type": "TEXT", "description": "고객 국가"}
+            ]
+        }
+    ]
+}

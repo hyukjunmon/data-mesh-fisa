@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  domain_customer:
+    build: ./domain_customer
+    ports:
+      - "5001:5000"
+  domain_order:
+    build: ./domain_order
+    ports:
+      - "6001:6000"
+  catalog_service:
+    build: ./catalog_service
+    ports:
+      - "7001:7000"
+  streamlit:
+    build: ./streamlit_app
+    ports:
+      - "8501:8501"
+    depends_on:
+      - domain_customer
+      - domain_order
+      - catalog_service
