@@ -21,5 +21,5 @@ st.dataframe(pd.DataFrame(orders))
 
 # 고객 데이터 조회
 st.header("👥 고객 데이터")
-customers = requests.get("http://domain_order:6000/api/customers").json()
-st.dataframe(pd.DataFrame(customers))
+payment = requests.get("http://payment_management:6000/api/payment").json()
+st.dataframe(pd.DataFrame(payment))

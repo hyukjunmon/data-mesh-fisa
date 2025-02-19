@@ -10,6 +10,6 @@ CREATE TABLE orders (
 
 INSERT INTO orders (customer_id, product_name, quantity, order_date)
 VALUES 
-(1, 'Smartphone X', 10, '2025-02-01'),
-(2, 'Tablet Z', 2, '2025-02-02'),
-(3, 'Laptop Pro', 1, '2025-02-05');
+(1, '키보드', 10, '2025-02-01'),
+(2, '마우스', 2, '2025-02-02'),
+(3, '노트북 거치대', 1, '2025-02-05');

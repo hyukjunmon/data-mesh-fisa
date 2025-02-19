@@ -3,3 +3,6 @@
 # domain_order/
 # streamlit_app/
 # docker-compose.yml
+init_cm.sql
+payment_management/init_pm.sql
+domain_customer/init_cm.sql

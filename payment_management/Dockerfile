@@ -4,7 +4,7 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 COPY . /app
-ENV DB_PATH=/app/domain_order.db
-RUN sqlite3 /app/domain_order.db < /app/init_db.sql
+ENV DB_PATH=/app/payment_management.db
+RUN sqlite3 /app/payment_management.db < /app/init_pm.sql
 EXPOSE 6000
 CMD ["python", "app.py"]
