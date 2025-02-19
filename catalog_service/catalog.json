@@ -59,10 +59,17 @@
             "description": "고객 데이터를 제공하는 API",
             "api_url": "http://domain_customer:6000/api/customers",
             "fields": [
-                {"name": "customer_id", "type": "INTEGER", "description": "고객 ID"},
-                {"name": "name", "type": "TEXT", "description": "고객 이름"},
-                {"name": "country", "type": "TEXT", "description": "고객 국가"}
-            ]
+            {"name": "BAS_YH", "type": "TEXT", "description": "기준시점(분기)"},
+            {"name": "SEQ", "type": "TEXT", "description": "고객번호"},
+            {"name": "AGE", "type": "TEXT", "description": "연령대"},
+            {"name": "SEX_CD", "type": "TEXT", "description": "성별"},
+            {"name": "MBR_RK", "type": "TEXT", "description": "회원등급"},
+            {"name": "ATT_YM", "type": "TEXT", "description": "입회년월"},
+            {"name": "HOUS_SIDO_NM", "type": "TEXT", "description": "거주지역_1"},
+            {"name": "DIGT_CHNL_REG_YN", "type": "TEXT", "description": "디지털채널가입여부"},
+            {"name": "DIGT_CHNL_USE_YN", "type": "TEXT", "description": "디지털채널이용여부(당월)"},
+            {"name": "LIFE_STAGE", "type": "TEXT", "description": "라이프스테이지"}
+        ]
         }
     ]
 }
