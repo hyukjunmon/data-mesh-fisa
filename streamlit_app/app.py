@@ -9,11 +9,11 @@ def pretty_json(data):
 st.title("📊 데이터 메시 대시보드")
 
 
-# 부서 목록 리스트
+
 departments = ["customer_management", "payment_management"]
 st.sidebar.header("📌 검색 가능한 부서 목록")
 st.sidebar.write("\n".join(departments))
-# 검색 기능 추가
+
 search_query = st.sidebar.text_input("🔍 검색 (예: payment_management)")
 search_button = st.sidebar.button("검색하기")
 
