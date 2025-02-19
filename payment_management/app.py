@@ -16,7 +16,7 @@ def get_customers():
     conn = get_db_connection()
     rows = conn.execute("SELECT * FROM payment_management").fetchall()
     conn.close()
-    return jsonify([dict(row) for row in rows])
+    return jsonify([dict(row) for row in rows[:5]])
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=6000)

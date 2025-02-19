@@ -1,7 +1,7 @@
 version: '3.8'
 services:
-  domain_customer:
-    build: ./domain_customer
+  customer_management:
+    build: ./customer_management
     ports:
       - "5001:5000"
   payment_management:
@@ -17,6 +17,6 @@ services:
     ports:
       - "8501:8501"
     depends_on:
-      - domain_customer
+      - customer_management
       - payment_management
       - catalog_service

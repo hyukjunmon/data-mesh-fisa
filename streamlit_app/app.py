@@ -14,12 +14,12 @@ for service in catalog["services"]:
     st.write(service["api_url"])
     st.json(service["fields"])
 
-# 주문 데이터 조회
-st.header("📦 주문 데이터")
-orders = requests.get("http://domain_customer:5000/api/orders").json()
-st.dataframe(pd.DataFrame(orders))
-
 # 고객 데이터 조회
-st.header("👥 고객 데이터")
+st.header("고객 데이터")
+customers = requests.get("http://customer_management:5000/api/customer").json()
+st.dataframe(pd.DataFrame(customers))
+
+# 결제 데이터 조회
+st.header("결제 데이터")
 payment = requests.get("http://payment_management:6000/api/payment").json()
 st.dataframe(pd.DataFrame(payment))

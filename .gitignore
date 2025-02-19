@@ -5,4 +5,4 @@
 # docker-compose.yml
 init_cm.sql
 payment_management/init_pm.sql
-domain_customer/init_cm.sql
+customer_management/init_cm.sql
