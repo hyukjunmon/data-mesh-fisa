@@ -18,7 +18,7 @@
                   {"name": "SVCARC_AM", "type": "TEXT", "description": "용역/수리/건축자재"},
                   {"name": "DIST_AM", "type": "TEXT", "description": "유통"},
                   {"name": "PLSANIT_AM", "type": "TEXT", "description": "보건위생"},
-                  {"name": "CLOTHGDS_AM", "type": "TEXT", "description": "의류/신변잡화"},
+                  {"name": "CLOTHGDS_AM", "type": "TEXT", "description": "의류/신변잡화"}
                   {"name": "AUTO_AM", "type": "TEXT", "description": "자동차/연료/정비"},
                   {"name": "FUNITR_AM", "type": "TEXT", "description": "가구"},
                   {"name": "APPLNC_AM", "type": "TEXT", "description": "가전제품"},
@@ -55,7 +55,7 @@
                 ]
         },
         {
-            "name": "Customer Service",
+            "name": "Customer Management",
             "description": "고객 데이터를 제공하는 API",
             "api_url": "http://domain_customer:6000/api/customers",
             "fields": [
